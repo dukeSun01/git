@@ -1,0 +1,36 @@
+git@gitlab.com:xuebagroup/xubagitpractice.git
+
+git remote add origin git@gitlab.com:xuebagroup/xubagitpractice.git
+
+git remote add origin https://github.com/yourName/repositoryname.git
+
+git pull origin master
+
+git status　　　　　　　　　　查看工作目录的状态
+
+git add <file>　　　　　　　　将文件添加到暂存区
+
+git commit -m "commnet" 　　提交更改,添加备注信息(此时将暂存区的信息提交到本地仓库)
+
+git push origin master 　　 将本地仓库的文件push到远程仓库
+
+$ ssh-keygen -t rsa -C "732448682@example.com"
+
+git push -u origin master 	第一次提交到库用的命令			（https://blog.csdn.net/a562509724/article/details/79608004）学习网站
+
+sun.yonghui@sunyonghui-d-1 MINGW64 ~/Desktop (master)			打开本地库
+$ cd ~
+
+sun.yonghui@sunyonghui-d-1 MINGW64 ~ (master)
+$ cd xubagitpractice/sun/
+
+git pull 合并冲突重新提交
+
+git branch 有可能是没有制定本地dev分支与远程origin/dev分支的链接，
+
+ git clone git@gitlab.com:xuebagroup/xubagitpractice.git
+
+git@gitlab.com:xuebagroup/xubagitpractice.git
+0f615e0182ed5f322774e2df29d8e8432a11411b
+
+

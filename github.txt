@@ -1,0 +1,46 @@
+博客园
+首页
+新随笔
+联系
+订阅
+管理
+github的初步使用（git shell ）
+一、登录到git，新建一个版本仓库
+
+二、在“Repository name”一栏里填写版本仓库的名称，如”test”,Description栏是描述，可填可不填。
+
+默认访问权限为公共，点击”Creating Repository”按钮，即创建了版本仓库。
+
+ 
+
+ 
+
+接下来，在本地安装git客户端。
+
+一、到官网下载客户端：https://github-windows.s3.amazonaws.com/GitHubSetup.exe，安装完成后，会在桌面上出现两个图标，Git Shell和GitHub。那两个图标分别是命令行工具和图形界面。
+
+二、双击打开Git Shell
+
+三、输入git config --global user.name "XXX",这里"XXX"是注册的用户名
+
+四、输入git config --global user.email abc@163.com,这里的邮箱是注册时的邮箱
+
+五、上面两步在客户端配置你的git帐户，接着在本地建立自己的版本仓库。输入cd d:，切换到D盘目录。
+
+六、输入mkdir test，建立一个test目录，注意本地仓库名要和git中建立的仓库名一样
+
+七、输入cd test，进入test目录
+
+八、输入git init,初始化版本仓库
+
+九、输入touch README,建立一个README文件
+
+十、用文本编辑器打开README文件，随便输入一点文件，比如：hello git!
+
+十一、输入git add README,将文件添加到上传队列
+
+十二、输入git commit -m 'test commit'，缓存提交，引号中的是对本次提交的描述，必须填写，不能为空
+
+十三、输入git remote add origin https://github.com/XXX/test.git,注意url格式，XXX是你注册时的昵称，test是你刚才建立的版本仓库
+
+十四、输入git push origin master，将README文件上传到版本库。
